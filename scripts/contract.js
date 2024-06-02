@@ -1,55 +1,9 @@
-const ethers = require("ethers");
-
+// import { ethers } from "ethers";
+// const ethers = require("ethers");
 // Initialize provider and signer
-let provider;
-let signer;
-let CorgiContract;
 
 // Check if MetaMask is installed
-if (typeof window.ethereum !== "undefined") {
-  console.log("MetaMask is installed!");
-  provider = new ethers.providers.Web3Provider(window.ethereum);
-  signer = provider.getSigner();
-  CorgiContract = new ethers.Contract(contractAddress, contractABI, signer);
-
-  console.log("Provider:", provider);
-  console.log("Signer:", signer);
-  console.log("Contract:", CorgiContract);
-} else {
-  alert("MetaMask is not installed. Please install it to use this app.");
-}
-
-// Function to finalize game score
-async function finalizeGameScore(claimAmount, score) {
-  try {
-    // Call the contract method
-    const tx = await CorgiContract.finalizeGameScore(claimAmount, score);
-    await tx.wait(); // Wait for transaction to be mined
-    console.log("Game score finalized successfully!");
-  } catch (error) {
-    console.error("Error finalizing game score:", error);
-  }
-}
-
-// Function to buy lifeline
-async function buyLifeLine(claimAmount, score) {
-  try {
-    // Call the contract method
-    const tx = await CorgiContract.buyLifeLine(claimAmount, score);
-    await tx.wait(); // Wait for transaction to be mined
-    console.log("Lifeline bought successfully!");
-  } catch (error) {
-    console.error("Error buying lifeline:", error);
-  }
-}
-
-module.exports = {
-  finalizeGameScore,
-  buyLifeLine,
-};
-
-// Contract address
-const contractAddress = "0x2600c7d59572A2978CB3f405eAae1A0EDb340208";
+const contractAddress = "0x784675590f1f072520dd0470840fA5CF256200D8";
 const contractABI = [
   {
     inputs: [
@@ -76,18 +30,7 @@ const contractABI = [
     type: "function",
   },
   {
-    inputs: [
-      {
-        internalType: "uint256",
-        name: "_claimAmount",
-        type: "uint256",
-      },
-      {
-        internalType: "uint256",
-        name: "_score",
-        type: "uint256",
-      },
-    ],
+    inputs: [],
     name: "buyLifeLine",
     outputs: [],
     stateMutability: "nonpayable",
@@ -707,16 +650,6 @@ const contractABI = [
       },
       {
         internalType: "uint256",
-        name: "_pendingClaim",
-        type: "uint256",
-      },
-      {
-        internalType: "uint256",
-        name: "_pendingScore",
-        type: "uint256",
-      },
-      {
-        internalType: "uint256",
         name: "_level",
         type: "uint256",
       },
@@ -740,3 +673,63 @@ const contractABI = [
     type: "function",
   },
 ];
+
+if (typeof window.ethereum !== "undefined") {
+  console.log("MetaMask is installed!");
+  let provider = new ethers.providers.Web3Provider(window.ethereum);
+  let signer = provider.getSigner();
+  let CorgiContract = new ethers.Contract(contractAddress, contractABI, signer);
+
+  console.log("Provider:", provider);
+  console.log("Signer:", signer);
+  console.log("Contract:", CorgiContract);
+} else {
+  alert("MetaMask is not installed. Please install it to use this app.");
+}
+
+// Function to finalize game score
+async function finalizeGameScore(claimAmount, score) {
+  try {
+    // Call the contract method
+    const tx = await CorgiContract.finalizeGameScore(claimAmount, score);
+    await tx.wait(); // Wait for transaction to be mined
+    console.log("Game score finalized successfully!");
+  } catch (error) {
+    console.error("Error finalizing game score:", error);
+  }
+}
+
+// Function to buy lifeline
+async function buyLifeLine() {
+  if (typeof window.ethereum !== "undefined") {
+    console.log("MetaMask is installed!");
+    let provider = new ethers.providers.Web3Provider(window.ethereum);
+    let signer = provider.getSigner();
+    let CorgiContract = new ethers.Contract(
+      contractAddress,
+      contractABI,
+      signer
+    );
+
+    console.log("Provider:", provider);
+    console.log("Signer:", signer);
+    console.log("Contract:", CorgiContract);
+  } else {
+    alert("MetaMask is not installed. Please install it to use this app.");
+  }
+  try {
+    // Call the contract method
+    const tx = await CorgiContract.buyLifeLine();
+    await tx.wait(); // Wait for transaction to be mined
+    console.log("Lifeline bought successfully!");
+  } catch (error) {
+    console.error("Error buying lifeline:", error);
+  }
+}
+
+// module.exports = {
+//   finalizeGameScore,
+//   buyLifeLine,
+// };
+
+// Contract address
