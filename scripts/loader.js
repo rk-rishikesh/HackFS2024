@@ -118,10 +118,10 @@ loader.addCompletionListener(() => {
       leftButtonsBlock.classList.remove('hide')
     }
     for (var i; i < mainBgBlocks.length; i += 1){
-      mainBgBlocks[i].style.backgroundImage = 'stuff/bg.gif'
+      mainBgBlocks[i].style.backgroundImage = 'stuff/bg.png'
     }
     for (var i; i < smallBtnBlocks.length; i += 1){
-      smallBtnBlocks[i].style.backgroundImage = 'stuff/bg.gif'
+      smallBtnBlocks[i].style.backgroundImage = 'stuff/bg.png'
     }    toggleHide(mainMenuBlock)
     toggleHide(loaderBlock)
     toggleHide(controlBlock)
