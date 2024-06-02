@@ -224,23 +224,8 @@ const bg = [
   new Bg(bgSprites[0], 0, 0.1),
   new Bg(bgSprites[0], canvas.height * bgRatio, 0.1),
 
-  new Bg(bgSprites[1], 0, 0.15),
-  new Bg(bgSprites[1], canvas.height * bgRatio, 0.15),
-
-  new Bg(bgSprites[2], 0, 0.25),
-  new Bg(bgSprites[2], canvas.height * bgRatio, 0.25),
-
-  new Bg(bgSprites[3], 0, 0.3),
-  new Bg(bgSprites[3], canvas.height * bgRatio, 0.3),
-
   new Bg(bgSprites[7], 0, 0.4),
   new Bg(bgSprites[7], canvas.height * bgRatio, 0.4),
-
-  new Bg(bgSprites[4], 0, 0.6),
-  new Bg(bgSprites[4], canvas.height * bgRatio, 0.6),
-
-  new Bg(bgSprites[5], 0, 1),
-  new Bg(bgSprites[5], canvas.height * bgRatio, 1),
 
   new Bg(bgSprites[6], 0, 1.2),
   new Bg(bgSprites[6], canvas.height * bgRatio, 1.2)
