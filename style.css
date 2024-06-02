@@ -422,7 +422,7 @@ margin-right: 10px;}
 	filter: brightness(0.9);
 	background-size: cover;
 	background-position:top;
-	background-image: url('stuff/bg.png');
+	background-image: url('stuff/bg.gif');
 }
 .mainLeftInfo{
   position: absolute;
