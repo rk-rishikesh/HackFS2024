@@ -127,14 +127,20 @@
             <img src="assets/gui/cart.png" alt="">
             store
           </div>
-          <div class='playButton  menuButton' onclick="PlayButtonActivate(); clickSound.play(); bgMusic.play(); ">
+
+          <div class='connectButton'  id="walletButton" onclick="connectWallet(); clickSound.play()">
+          </div>
+
+          <div class='menuButton' 
+          onclick="PlayButtonActivate(); clickSound.play(); bgMusic.play(); "
+          >
             <img src="assets/gui/Play.png" alt="">
             play
+            
+      
           </div>
-          <div class='achivesButton  menuButton' onclick="toggleHide(achivesBlock); clickSound.play()">
-            <img src="assets/gui/achives.png" alt="">
-            achives
-          </div>
+          
+          
         </div>
         <div class="mainLeftInfo">
           <div class="mainLeftWrapper">
@@ -340,6 +346,7 @@
   <script type="text/javascript" src="scripts/vars.js"></script>
   <script type="text/javascript" src="scripts/loader.js"></script>
   <script type="text/javascript" src="scripts/game.js"></script>
+  <script type="text/javascript" src="scripts/walletConnect.js"></script>
 </body>
 
 </html>
