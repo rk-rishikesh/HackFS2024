@@ -1,275 +1,270 @@
 @font-face {
-	font-family: 'pixelFlag'; 
-	src: url('assets/fonts/000webfont1.ttf') 
+  font-family: "pixelFlag";
+  src: url("assets/fonts/000webfont1.ttf");
 }
 
 @font-face {
-	font-family: 'Botsmatic3d'; 
-	src: url('assets/fonts/Botsmatic3d.ttf') 
+  font-family: "Botsmatic3d";
+  src: url("assets/fonts/Botsmatic3d.ttf");
 }
 @font-face {
-	font-family: 'BotsmaticOutline'; 
-	src: url('assets/fonts/BotsmaticOutline.ttf') 
+  font-family: "BotsmaticOutline";
+  src: url("assets/fonts/BotsmaticOutline.ttf");
 }
 @font-face {
-	font-family: 'BotsmaticDemo'; 
-	src: url('assets/fonts/BotsmaticDemo.ttf') 
+  font-family: "BotsmaticDemo";
+  src: url("assets/fonts/BotsmaticDemo.ttf");
 }
 ::-webkit-scrollbar {
-	width: 0;
-  }
+  width: 0;
+}
 
 body,
 html {
-	width: 100%;
-	height: 100%;
-	background-color: black;
-	font-family: 'pixelFlag';
-	color: #fff;
-	overflow: hidden;
-	margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  font-family: "pixelFlag";
+  color: #fff;
+  overflow: hidden;
+  margin: 0;
 }
 
-.circles{
-	position: absolute;
-    overflow: hidden;
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	pointer-events: none;
-	z-index: 0;
+.circles {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  z-index: 0;
 }
 
-.circles li{
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-	border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    animation: animate 5s linear infinite;
-    bottom: -150px;
-	
-    
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  animation: animate 5s linear infinite;
+  bottom: -150px;
 }
 
-.circles li:nth-child(1){
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
-	animation-duration: 7s;
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+  animation-duration: 7s;
 }
 
-
-.circles li:nth-child(2){
-    left: 10%;
-    width: 50px;
-    height: 50px;
-    animation-delay: 2s;
-    animation-duration: 18s;
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 2s;
+  animation-duration: 18s;
 }
 
-.circles li:nth-child(3){
-    left: 70%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 9s;
-	animation-duration: 8s;
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 9s;
+  animation-duration: 8s;
 }
 
-.circles li:nth-child(4){
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 0s;
-    animation-duration: 17s;
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 17s;
 }
 
-.circles li:nth-child(5){
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 0s;
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
 }
 
-.circles li:nth-child(6){
-    left: 75%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 3s;
-	animation-duration: 6s;
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 3s;
+  animation-duration: 6s;
 }
 
-.circles li:nth-child(7){
-    left: 35%;
-    width: 50px;
-    height: 50px;
-    animation-delay: 5s;
-	animation-duration: 20s;
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 5s;
+  animation-duration: 20s;
 }
 
-.circles li:nth-child(8){
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 15s;
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 15s;
 }
 
-.circles li:nth-child(9){
-    left: 20%;
-    width: 40px;
-    height: 40px;
-    animation-delay: 2s;
-    animation-duration: 10s;
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 2s;
+  animation-duration: 10s;
 }
 
-.circles li:nth-child(10){
-    left: 85%;
-    width: 100px;
-    height: 100px;
-    animation-delay: 0s;
-    animation-duration: 5s;
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 0s;
+  animation-duration: 5s;
 }
-
-
 
 @keyframes animate {
+  0% {
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
 
-    0%{
-        transform: translateY(-50vh);
-        opacity: 0;
-    }
-
-    100%{
-        transform: translateY(-120vh);
-        opacity: 1;
-    }
-
+  100% {
+    transform: translateY(-120vh);
+    opacity: 1;
+  }
 }
-main{
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.screenRatio{
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	height: 100%;
+.screenRatio {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
-.insideScreenRatio{
-	padding: 20px;
-	margin: 0;
-	width: 70%;
-	height: 60%;
+.insideScreenRatio {
+  padding: 20px;
+  margin: 0;
+  width: 70%;
+  height: 60%;
 }
 
 .wrapper {
-	position: relative;
-	overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
-.canvas{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100%;
-	background: #000;
-	z-index: -10;
+.canvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -10;
 }
-.controlBlock{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
+.controlBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
   font-size: 30px;
-	background-color: rgba(47, 31, 46, 0.55);
-	border-radius: 10px 10px;
-	opacity: 0;
-	top: 30%;
-	left: 50%; 
-	padding: 20px;
-	box-sizing: border-box;
-  	transform: translate(-50%, -50%);
-	transition: 1s;
+  background-color: rgba(47, 31, 46, 0.55);
+  border-radius: 10px 10px;
+  opacity: 0;
+  top: 30%;
+  left: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  transition: 1s;
 }
-.controlButton{
-	
-	height: 45px;
-	width: 45px;
-	margin: 4px;
-	image-rendering: pixelated;
+.controlButton {
+  height: 45px;
+  width: 45px;
+  margin: 4px;
+  image-rendering: pixelated;
 }
-.mobileControlButt{
-	height:13vh;
-	width: auto;
-	image-rendering: pixelated;
-	background-color: rgba(255, 255, 255, 0.237);
-	border-radius: 20%;
-	padding: 10px;
+.mobileControlButt {
+  height: 13vh;
+  width: auto;
+  image-rendering: pixelated;
+  background-color: rgba(255, 255, 255, 0.237);
+  border-radius: 20%;
+  padding: 10px;
 }
-.leftButtonsBlock{
-	display: none;
+.leftButtonsBlock {
+  display: none;
 }
-.rightButtonsBlock{
-	display: none;
+.rightButtonsBlock {
+  display: none;
 }
 
 .pause,
 .gameOver,
-.mainMenu, 
-.credits, .tutorial, .achives, .store{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	text-align: center;
-	font-size: 35px;
+.mainMenu,
+.credits,
+.tutorial,
+.achives,
+.store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 35px;
 }
-.mainTitle{
-	font-family: 'BotsmaticDemo';
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	font-size: 70px;
-	height: 40%;
-	z-index: 100;
+.mainTitle {
+  font-family: "BotsmaticDemo";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 70px;
+  height: 40%;
+  z-index: 100;
   line-height: 1.3;
 }
-.subtitle{
-	font-family: 'pixelFlag';
-	font-weight: bold;
-	font-size: 40px;
-	letter-spacing: 3px;
-
+.subtitle {
+  font-family: "pixelFlag";
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 3px;
 }
-.pause, .gameOver{
-	background: url('assets/gui/popup.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-	image-rendering: pixelated;
+.pause,
+.gameOver {
+  background: url("assets/gui/popup.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  image-rendering: pixelated;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-repeat: no-repeat;
-	border-radius: 20px 20px;
-	line-height: 1.3;
+  border-radius: 20px 20px;
+  line-height: 1.3;
   animation: soft 0.2s ease-out;
   font-size: 50px;
   font-weight: bold;
@@ -283,15 +278,14 @@ main{
     opacity: 1;
   }
 }
-.mainMenuButtons{
-  margin-top:80px;
+.mainMenuButtons {
+  margin-top: 80px;
   width: 100%;
   font-size: 20px;
-	display: flex;
-	justify-content: space-evenly;
-	z-index: 100;
-  font-family: 'BotsmaticDemo';
-
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 100;
+  font-family: "BotsmaticDemo";
 }
 
 .menuButton {
@@ -300,99 +294,114 @@ main{
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  width:150px;
+  width: 150px;
   height: 80px;
   padding: 10px 20px;
-  background-image: url('assets/gui/midBtn.png');
+  background-image: url("assets/gui/midBtn.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   image-rendering: pixelated;
   transition: 0.3s;
-
 }
-.playButton{
+.connectButton {
   position: relative;
-  bottom: 100px
+  bottom: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 80px;
+  padding: 10px 20px;
+  background-image: url("assets/gui/midBtn.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  image-rendering: pixelated;
+  transition: 0.3s;
 }
-.menuButton img{
+.menuButton img {
   height: 40px;
   margin-right: 10px;
 }
 .pauseButton {
-	position: absolute;
-	height: 40px;
-	width: 40px;
-	right: 20px;
-	top: 20px;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  right: 20px;
+  top: 20px;
 }
-.replayButton, .homeButton, .playOnPauseButton {
-	height: 55px;
-	width: 55px;
-	margin: 20px;
+.replayButton,
+.homeButton,
+.playOnPauseButton {
+  height: 55px;
+  width: 55px;
+  margin: 20px;
 }
-.rightTopBlock{
-	position:absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	top: 20px;
-	right: 20px;
+.rightTopBlock {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  right: 20px;
 }
-.smallBtn{
-	width: 40px;
-	height: 40px;
-	cursor: pointer;
-	background-image: url('assets/gui/smallBtn.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	image-rendering: pixelated;
-	padding: 10px;
-margin-right: 10px;}
-.smallBtn:hover{
-	filter: brightness(0.7);
+.smallBtn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-image: url("assets/gui/smallBtn.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  padding: 10px;
+  margin-right: 10px;
 }
-.soundBtn{
-  height: 50px ;
-  width: 50px ;
-	content: url('assets/gui/soundOn.png');
+.smallBtn:hover {
+  filter: brightness(0.7);
 }
-.soundBtnOff{
-	content: url('assets/gui/soundOff.png');
-	filter: brightness(0.6) !important;
+.soundBtn {
+  height: 50px;
+  width: 50px;
+  content: url("assets/gui/soundOn.png");
 }
-.playOnPauseButton{
-	width: 50px;
+.soundBtnOff {
+  content: url("assets/gui/soundOff.png");
+  filter: brightness(0.6) !important;
 }
-.smallBtn{
-	filter:drop-shadow(5px 5px 5px #0000004e);
-	cursor: pointer;
+.playOnPauseButton {
+  width: 50px;
 }
-.button:hover{
-	filter: brightness(0.7);
-
+.smallBtn {
+  filter: drop-shadow(5px 5px 5px #0000004e);
+  cursor: pointer;
 }
-.score{
-	position: absolute;
-	left: 20px;
-	top: 5px;
-	color: #fff;
-	font-size: 60px;
+.button:hover {
+  filter: brightness(0.7);
 }
-.coins{
-	position: absolute;
+.score {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  color: #fff;
+  font-size: 60px;
+}
+.coins {
+  position: absolute;
   display: flex;
   justify-content: baseline;
   align-items: baseline;
-	left: 20px;
-	top: 45px;
-	color: #ffd502;
-	font-size: 45px;
+  left: 20px;
+  top: 45px;
+  color: #ffd502;
+  font-size: 45px;
 }
-.coins img{
+.coins img {
   width: 20px;
 }
-.storeCoins{
+.storeCoins {
   position: absolute;
   display: flex;
   align-items: center;
@@ -400,72 +409,72 @@ margin-right: 10px;}
   top: 20%;
   left: 5%;
 }
-.storeCoins img{
+.storeCoins img {
   width: 40px;
   height: 35px;
 }
 
-.gameOverScore{
-	position: unset;
-	font-size: 50px;
+.gameOverScore {
+  position: unset;
+  font-size: 50px;
 }
-.HIandRecord{
+.HIandRecord {
   font-size: 50px;
   font-weight: bold;
 }
 
-
-.mainBg{
-	font-family: 'pixelFlag';
-	display: flex;
-	flex-direction: row;
-	filter: brightness(0.9);
-	background-size: cover;
-	background-position:top;
-	background-image: url('stuff/bg.gif');
-}
-.mainLeftInfo{
-  position: absolute;
-	left: 25px;
-	top: 30px;
-	z-index: 100;
+.mainBg {
+  font-family: "pixelFlag";
   display: flex;
-
+  flex-direction: row;
+  filter: brightness(0.9);
+  background-size: cover;
+  background-position: top;
+  background-image: url("stuff/bg.gif");
 }
-.mainLeftWrapper{
-	display: flex;
-	align-items: center;
+.mainLeftInfo {
+  position: absolute;
+  left: 25px;
+  top: 30px;
+  z-index: 100;
+  display: flex;
+}
+.mainLeftWrapper {
+  display: flex;
+  align-items: center;
   margin-bottom: 10px;
 }
-.mainStatText{
+.mainStatText {
   font-weight: 600;
   font-size: 55px;
   margin-right: 15px;
 }
-#prizeImg{
-	width: 50px;
-	height: auto;
-	margin-right: 15px;
+#prizeImg {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
 }
 
-#coinImg{
-	width: 50px;
-	height: auto;
-	margin-right: 15px;
+#coinImg {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
 }
 
-.credits, .achives, .store{
-	flex-direction: column;
-	font-size: 50px;
-	text-shadow: unset;
-	overflow-y: auto;
-	padding: 20px;
-	box-sizing: border-box;
-	justify-content: space-between;
+.credits,
+.achives,
+.store {
+  flex-direction: column;
+  font-size: 50px;
+  text-shadow: unset;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
 }
 
-.achivesHolder{
-  animation: fromTop 0.6s ;
+.achivesHolder {
+  animation: fromTop 0.6s;
 }
 
 @keyframes fromTop {
@@ -477,42 +486,42 @@ margin-right: 10px;}
     display: block;
   }
 }
-.creditsHolder{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
+.creditsHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   animation: fromTop 0.6s;
 }
 
-.store{
+.store {
   padding: 0;
 }
 
-.achivesHolder{
-	width: 100%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
+.achivesHolder {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.storeHolder{
+.storeHolder {
   height: 100%;
   position: relative;
   animation: fellOnTop 0.6s ease-in;
 }
-.storeBack{
-  content: url('assets/gui/store.png');
+.storeBack {
+  content: url("assets/gui/store.png");
   height: 80%;
   position: relative;
 }
-.store-return-btn{
+.store-return-btn {
   position: absolute;
   bottom: 20px;
 }
-.addBtn{
+.addBtn {
   position: absolute;
   align-items: center;
   top: 30%;
@@ -523,14 +532,14 @@ margin-right: 10px;}
   background-size: contain;
   background-repeat: no-repeat;
 }
-.addBtn:hover{
+.addBtn:hover {
   filter: brightness(0.8);
 }
-.saveMeHolder{
+.saveMeHolder {
   font-weight: normal;
   font-size: 30px;
 }
-.saveMeAdd{
+.saveMeAdd {
   align-items: center;
   background-image: url(assets/gui/smallBtn.png);
   height: 40%;
@@ -539,11 +548,11 @@ margin-right: 10px;}
   background-repeat: no-repeat;
   position: static;
 }
-.saveMeButtonsHolder{
+.saveMeButtonsHolder {
   display: flex;
   align-items: flex-start;
 }
-.gameOverCoinsHolder{
+.gameOverCoinsHolder {
   display: flex;
   align-items: baseline;
   font-size: 50px;
@@ -551,56 +560,56 @@ margin-right: 10px;}
   border-bottom: 5px solid white;
   padding: 0 15px;
 }
-.payForLife{
+.payForLife {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 25px;
 }
-.payForLifeImg{
+.payForLifeImg {
   position: relative;
   top: 2px;
   width: 25px;
   height: 20px;
   image-rendering: auto;
 }
-.upgrade{
+.upgrade {
   display: flex;
   align-items: end;
   justify-content: center;
 }
-.upgradeCoinImg{
+.upgradeCoinImg {
   width: 20px;
   height: 18px;
-  image-rendering:auto;
+  image-rendering: auto;
   position: relative;
   top: 2px;
 }
-.upgradeBtnContent{
+.upgradeBtnContent {
   position: absolute;
-  top: 45%;  
+  top: 45%;
   left: 52%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
 }
 
-.upgradeHolder img{
+.upgradeHolder img {
   width: 50px;
-  image-rendering:auto;
-
+  image-rendering: auto;
 }
-.upgradeHolder{
+.upgradeHolder {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.upgradesWrapper{
+.upgradesWrapper {
   position: absolute;
   top: 35%;
   left: 10%;
 }
-.shieldUpgradeHolder, .boosterUpgradeHolder{
+.shieldUpgradeHolder,
+.boosterUpgradeHolder {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -608,31 +617,31 @@ margin-right: 10px;}
   image-rendering: pixelated;
   text-align: left;
 }
-.upgradeHolder{
-  background-image: url('assets/gui/btn.png');
+.upgradeHolder {
+  background-image: url("assets/gui/btn.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 10px;
 }
-.upgradeLevel{
+.upgradeLevel {
   width: 20px;
   height: 20px;
-  margin-right:10px ;
+  margin-right: 10px;
   border-radius: 50%;
   background-color: #27110938;
 }
-.activeLevel{
+.activeLevel {
   background-color: #4b0808ad;
 }
-.upgradeProgress{
+.upgradeProgress {
   margin-left: 15px;
   display: flex;
 }
-.upgradeBtn{
+.upgradeBtn {
   margin: 0;
   margin-left: 10px;
-  font-size:30px;
+  font-size: 30px;
   position: relative;
   padding: 17px;
 }
@@ -652,72 +661,73 @@ margin-right: 10px;}
     display: block;
   }
 }
-.achiveBlock{
-	font-family: 'pixelFlag';
-	align-items: center;
-	font-size: 25px;
-	display: flex;
-	padding: 10px;
-	color: rgb(255, 255, 255);
-	width: 40%;
-	height:fit-content;
-	background-color: rgb(36, 30, 68);
-	margin-bottom: 20px;
-	border-radius: 10px 10px;
+.achiveBlock {
+  font-family: "pixelFlag";
+  align-items: center;
+  font-size: 25px;
+  display: flex;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  width: 40%;
+  height: fit-content;
+  background-color: rgb(36, 30, 68);
+  margin-bottom: 20px;
+  border-radius: 10px 10px;
 }
 
-.achiveText{
-	text-align: center;
+.achiveText {
+  text-align: center;
 }
-.achiveText p{
-	margin: 0;
-	font-size: 30px;
-	text-decoration: underline 3px;
+.achiveText p {
+  margin: 0;
+  font-size: 30px;
+  text-decoration: underline 3px;
 }
-.achiveImg{
-	height: 50px;
-	margin-right: 20px;
+.achiveImg {
+  height: 50px;
+  margin-right: 20px;
 }
-.lock{
-	opacity: 0.7;
+.lock {
+  opacity: 0.7;
 }
-.statsHolder{
-	display: flex;
-	font-size: 30px;
-	margin-bottom: 20px
+.statsHolder {
+  display: flex;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 .btn {
-	width: auto;
-	height: auto;
-	padding: 30px;
-	height: auto; 
-	border: 0;
-	outline: none;
-	cursor: pointer;
-	font-family: 'pixelFlag';
-	background: none;
-	background-image: url('assets/gui/btn.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position:right;
-	image-rendering: pixelated;
+  width: auto;
+  height: auto;
+  padding: 30px;
+  height: auto;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-family: "pixelFlag";
+  background: none;
+  background-image: url("assets/gui/btn.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  image-rendering: pixelated;
   font-size: 30px;
-	color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   transition: 0.3s;
 }
-.btn:hover, .menuButton:hover{
-	filter: brightness(0.8);
+.btn:hover,
+.menuButton:hover {
+  filter: brightness(0.8);
   transform: scale(1.03);
 }
-.return-btn-holder{
-	width: 100%;
-	height: fit-content;
-	position:sticky;
-	right: 10px;
+.return-btn-holder {
+  width: 100%;
+  height: fit-content;
+  position: sticky;
+  right: 10px;
   bottom: 0px;
 }
-.return-btn{
-	font-size: 35px;
+.return-btn {
+  font-size: 35px;
   animation: fromBottom 0.6s ease-in-out;
 }
 
@@ -730,41 +740,40 @@ margin-right: 10px;}
     display: block;
   }
 }
-.stat{
-	margin-right: 20px;
+.stat {
+  margin-right: 20px;
 }
-.credits{
+.credits {
   font-size: 30px;
 
-	font-family: 'BotsmaticDemo';
+  font-family: "BotsmaticDemo";
 }
-.credits a{
-	font-family: 'pixelFlag';
-	font-weight: bold;
-	color: rgb(30, 0, 94)
+.credits a {
+  font-family: "pixelFlag";
+  font-weight: bold;
+  color: rgb(30, 0, 94);
 }
-.credits a:hover{
-	color: rgb(51, 10, 140)
-}
-
-.mainMenuSide{
-	height: 100%;
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-.credits{
-	text-shadow: unset;
+.credits a:hover {
+  color: rgb(51, 10, 140);
 }
 
+.mainMenuSide {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.credits {
+  text-shadow: unset;
+}
 
 .loader {
   display: inline-block;
   position: relative;
   left: 50%;
-  top:40%;
+  top: 40%;
   transform: translateX(-50%);
   width: 80px;
   height: 80px;
@@ -801,217 +810,219 @@ margin-right: 10px;}
 }
 
 .hide {
-	display: none;
+  display: none;
   opacity: 0;
 }
 @media screen and (orientation: portrait) {
-	#turnLandscape{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color:rgb(255, 255, 255);
-		flex-direction: column;
-		width: 100%;
-		height: 100%;
-		background-color: rgb(0, 0, 0);
-	}
-	#rotateIcon{
-		height: 100px;
-	}
+  #turnLandscape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+  }
+  #rotateIcon {
+    height: 100px;
+  }
 
-	main {
-	  display: none;
-	}
+  main {
+    display: none;
+  }
 }
-  
+
 @media screen and (orientation: landscape) {
-	#turnLandscape{
-		display: none;
-	}
-	main {
-		display: flex;
-	}
+  #turnLandscape {
+    display: none;
+  }
+  main {
+    display: flex;
+  }
 }
-@media (max-width: 920px){
-	.screenRatio{
-		width: 100%;
-		height: 100%;
-		box-sizing: border-box;
-
-	}
-  .rightTopBlock{
+@media (max-width: 920px) {
+  .screenRatio {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .rightTopBlock {
     right: 30px;
     top: 30px;
   }
-  .mainTitle{
+  .mainTitle {
     font-size: 50px;
     line-height: 1.4;
   }
-  .subtitle{
+  .subtitle {
     font-size: 25px;
   }
-  .smallBtn{
+  .smallBtn {
     width: 24px;
     height: 24px;
   }
-  .soundBtn{
-    height: 40px ;
-    width: 40px ;
+  .soundBtn {
+    height: 40px;
+    width: 40px;
   }
-  .score{
+  .score {
     font-size: 50px;
-    
   }
-  .coins{
+  .coins {
     font-size: 40px;
     top: 35px;
-
   }
-  .btn{
+  .btn {
     padding: 18px;
   }
   .return-btn {
     font-size: 25px;
-}
-  .playButton{
+  }
+  .connectButton {
     bottom: 65px;
   }
-  .menuButton img{
+  .menuButton img {
     height: 30px;
   }
   .menuButton {
-    width:120;
+    width: 120;
     height: 50;
   }
-  .mainMenuButtons{
+  .mainMenuButtons {
     font-size: 15px;
   }
-	.insideScreenRatio{
-		overflow: scroll;
-		width: 85%;
-		height: 85%;
-	}
-  #coinImg {
-    width: 40px;
+  .insideScreenRatio {
+    overflow: scroll;
+    width: 85%;
+    height: 85%;
   }
   #coinImg {
     width: 40px;
   }
-	.mainStatText{
-		font-size: 40px;
-	}
-	.pause, .gameOver{
-		font-size: 35px;
-	}
+  #coinImg {
+    width: 40px;
+  }
+  .mainStatText {
+    font-size: 40px;
+  }
+  .pause,
+  .gameOver {
+    font-size: 35px;
+  }
   .HIandRecord {
     font-size: 40px;
     line-height: 0;
-  } 
-  .saveBtn{
+  }
+  .saveBtn {
     height: 40px;
     width: 40px;
   }
-  .gameOverCoins{
+  .gameOverCoins {
     font-size: 35px;
   }
-	.pauseButton {
-		height: 30px;
-		width: 30px
-	}
-	.rightTopBlock{
-		width: 30px;
-		height: 30px;
-	}
-  .buttonHolder{
+  .pauseButton {
+    height: 30px;
+    width: 30px;
+  }
+  .rightTopBlock {
+    width: 30px;
+    height: 30px;
+  }
+  .buttonHolder {
     height: 50px;
   }
-	.achiveImg{
-		height: 43px;
-		margin-right: 10px;
-	}
-	.achiveText p{
-		font-size: 25px;
-	}
-  .statsHolder{
+  .achiveImg {
+    height: 43px;
+    margin-right: 10px;
+  }
+  .achiveText p {
     font-size: 25px;
   }
-	.achiveText{
-		font-size: 19px;
-	}
-	.achivesHolder{
-		justify-content: space-evenly;
-	}
-	.achiveBlock{
-		justify-content: center;
-		width: 43%;
-	}
-	.achives{
-		padding: 10px;
-	}
-	.credits{
-		font-size: 30px;
-	}
-	.credits a{
-		font-size: 25px;
-	}
-	.leftButtonsBlock{
-		display: block;
-		position: absolute;
-		left: 40px;
-		bottom: 20px;
-	}
-	.rightButtonsBlock{
-		display: block;
-		position: absolute;
-		right: 40px;
-		bottom: 20px;
-	}
-	.controlBlock{
-		display: none;
-	}
+  .statsHolder {
+    font-size: 25px;
+  }
+  .achiveText {
+    font-size: 19px;
+  }
+  .achivesHolder {
+    justify-content: space-evenly;
+  }
+  .achiveBlock {
+    justify-content: center;
+    width: 43%;
+  }
+  .achives {
+    padding: 10px;
+  }
+  .credits {
+    font-size: 30px;
+  }
+  .credits a {
+    font-size: 25px;
+  }
+  .leftButtonsBlock {
+    display: block;
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+  }
+  .rightButtonsBlock {
+    display: block;
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+  }
+  .controlBlock {
+    display: none;
+  }
   .upgradesWrapper {
     top: 30%;
     left: 7%;
   }
-  .upgradeHolder{
+  .upgradeHolder {
     padding: 12px;
   }
   .upgradeHolder img {
     width: 34px;
   }
-  .shieldUpgradeHolder, .boosterUpgradeHolder{
+  .shieldUpgradeHolder,
+  .boosterUpgradeHolder {
     font-size: 24px;
   }
-  .upgradeLevel{
+  .upgradeLevel {
     height: 15px;
     width: 15px;
     margin-right: 8px;
   }
-  .storeCoins{
+  .storeCoins {
     font-size: 35px;
   }
-  .mainLeftInfo{
-  flex-direction: column;
-  align-items: flex-end;    
+  .mainLeftInfo {
+    flex-direction: column;
+    align-items: flex-end;
   }
-  .mainStatText{
+  .mainStatText {
     margin: 0;
   }
   .storeCoins img {
     width: 30px;
     height: 25px;
   }
-  .replayButton, .homeButton, .playOnPauseButton {
+  .replayButton,
+  .homeButton,
+  .playOnPauseButton {
     height: 40px;
     width: 40px;
     margin: 10px;
   }
-  .storeBack{
+  .storeBack {
     height: 85%;
   }
   .store-return-btn {
     position: absolute;
-    bottom: 0px;}
+    bottom: 0px;
+  }
   .hide {
     display: none;
   }
