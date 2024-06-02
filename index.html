@@ -14,6 +14,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
   <link rel="manifest" href="fav/site.webmanifest">
   <script src="https://yandex.ru/games/sdk/v2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js" integrity="sha512-FDcVY+g7vc5CXANbrTSg1K5qLyriCsGDYCE02Li1tXEYdNQPvLPHNE+rT2Mjei8N7fZbe0WLhw27j2SrGRpdMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
@@ -86,12 +87,17 @@
       <div class="saveMeHolder">
         save me!
         <div class="saveMeButtonsHolder">
-          <div class="payForLife smallBtn saveBtn" onclick="payForLife()">
-            100
-            <img class='payForLifeImg'src="assets/sprites/collect/coin.png" alt="">
-         </div>
-           <img class='smallBtn saveBtn' src="assets/gui/add.png" alt=""
-             onclick="showRevawardVideo(saveMe); clickSound.play()"><br>
+          <div id="endGameButton" class="payForLife smallBtn saveBtn" onclick="finalizeGameScore()">
+            <span id="endGamebuttonText">END GAME</span>
+            <img class='payForLifeImg' src="assets/sprites/collect/coin.png" alt="">
+          </div>
+           <!-- <img class='smallBtn saveBtn' src="assets/gui/add.png" alt=""
+             onclick="buyLifeLine(); clickSound.play()"> -->
+             <div id="saveButton" class="payForLife smallBtn saveBtn" onclick="buyLifeLine()">
+              <span id="SaveMebuttonText">Save Me!</span>
+              <!-- <img class='payForLifeImg' src="assets/sprites/collect/coin.png" alt=""> -->
+            </div>
+             <br>
         </div>
         
         
@@ -128,7 +134,7 @@
             store
           </div>
 
-          <div class='connectButton'  id="walletButton" onclick="connectWallet(); clickSound.play()">
+          <div class='connectButton' id="walletButton" onclick="connectWallet(); clickSound.play()">
           </div>
 
           <div class='menuButton' 
@@ -347,6 +353,7 @@
   <script type="text/javascript" src="scripts/loader.js"></script>
   <script type="text/javascript" src="scripts/game.js"></script>
   <script type="text/javascript" src="scripts/walletConnect.js"></script>
+  <!-- <script type="text/javascript" src="scripts/contract.js" defer></script> -->
 </body>
 
 </html>
